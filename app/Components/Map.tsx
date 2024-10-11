@@ -18,10 +18,12 @@ const Map = ({searchData}:{searchData:searchData}) => {
 
   
   const markerIcon = new L.Icon({
-    iconUrl: '/public/marker-icon.png',
-    iconSize: [24, 24],
+    iconUrl: '/marker-icon.png',
+    iconSize: [30, 40],
     iconClassName: 'leaflet-marker-icon',
+    
   });
+  
 
   return (
  
@@ -32,7 +34,7 @@ const Map = ({searchData}:{searchData:searchData}) => {
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
   />
   {searchData.map((item)=>(
-      <Marker key={item.lat} position={[item.lat,item.long]} icon={markerIcon}>
+      <Marker key={item.lat} position={[item.lat,item.long]}  icon={markerIcon}>
     <Popup>
       {item.title}
     </Popup>
