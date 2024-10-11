@@ -18,7 +18,7 @@ const Map = ({searchData}:{searchData:searchData}) => {
 
   
   const markerIcon = new L.Icon({
-    iconUrl: '/app/marker-icon.png',
+    iconUrl: '/public/marker-icon.png',
     iconSize: [24, 24],
     iconClassName: 'leaflet-marker-icon',
   });
