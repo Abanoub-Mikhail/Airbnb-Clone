@@ -4,7 +4,6 @@ import { getCenter } from 'geolib';
 import 'leaflet/dist/leaflet.css'
 import { MapContainer, Marker, Popup, TileLayer  } from 'react-leaflet';
 import L from 'leaflet'
-import Image from 'next/image';
 
 
 
@@ -19,9 +18,9 @@ const Map = ({searchData}:{searchData:searchData}) => {
 
   
   const markerIcon = new L.Icon({
-    iconUrl: '/app/marker-icon.png', // Adjust the path
+    iconUrl: '/app/marker-icon.png',
     iconSize: [24, 24],
-    iconClassName: 'leaflet-marker-icon', // Optional, but recommended
+    iconClassName: 'leaflet-marker-icon',
   });
 
   return (

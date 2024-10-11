@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Banner from "./Components/Banner";
 import Explore from "./Components/Explore";
 import Live from "./Components/Live";

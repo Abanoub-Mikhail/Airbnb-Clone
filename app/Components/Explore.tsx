@@ -16,8 +16,8 @@ const Explore = async () => {
           <Title title='Explore Nearby'/>
         <div className=' grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 '>
         {ExploreData.map((item) =>(
-          <motion.div initial={{ translateY: 100 , opacity:0 }} whileInView={{ translateY: 0 , opacity:1} } transition={{duration:0.8}}>
-            <ExploreCard key={item.img} img={item.img} distance={item.distance} location = {item.location} />
+          <motion.div initial={{ translateY: 100 , opacity:0 }} whileInView={{ translateY: 0 , opacity:1} } transition={{duration:0.8}} key={item.img}>
+            <ExploreCard img={item.img} distance={item.distance} location = {item.location} />
           </motion.div>
         
         ))}
