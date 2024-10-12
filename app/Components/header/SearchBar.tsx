@@ -26,10 +26,10 @@ const SearchBar = ({placeholder}:{placeholder?:string}) => {
 
   return (
     <>
-    <div className={` flex items-center md:border-2 rounded-full py-2 md:shadow-sm relative top-6 right-4 md:top-0 md:right-0`}>
+    <div className={` flex items-center md:border-2 rounded-full py-2 md:shadow-sm relative top-6 right-6 md:top-0 md:right-0`}>
         <input type="text" 
-        placeholder={placeholder || "Start Your Search"}
-        className='text-sm text-gray-600 placeholder-gray-400 flex-grow pl-5 bg-transparent outline-none'
+        placeholder={placeholder || "Start Your Search ....."}
+        className='text-sm text-gray-600 placeholder-gray-400 text-center flex-grow p-0 md:pl-5 bg-transparent outline-none'
         onChange={(e)=>setInput(e.target.value)}
         value={input}
         />

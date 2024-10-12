@@ -10,8 +10,8 @@ type ListingCardProps = Omit<ListingCardItem, 'long' | 'lat'>
 const ListingCard = ({title, description,img , total, price, star , location}:ListingCardProps) => {
   return (
     <motion.div initial={{ translateX: -100 , opacity:0 }} whileInView={{ translateX: 0 , opacity:1} } transition={{duration:0.8}}
-      className='flex py-2 px-2 border-b cursor-pointer pr-4 hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t'>
-    <div className='relative h-24 w-40 md:h-52 md:w-80 flex-shrink-0'>
+      className='flex flex-col md:flex-row py-2 px-2 border-b mb-4 cursor-pointer pr-4 hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t'>
+    <div className='relative h-24 w-full mb-3 md:m-0 md:h-52 md:w-80 flex-shrink-0'>
       <Image
         src={img}
         fill

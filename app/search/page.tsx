@@ -65,7 +65,7 @@ const searchData:searchData = await getSearchResult();
         ))}
         </div>
         </div>
-        <div className=' hidden lg:inline-flex lg:min-w-[600px] py-10 px-5 '>
+        <div className='  w-full h-40 mt-3 md:h-[auto] md:py-10 md:px-5 '>
           <DynamicMap searchData = {searchData}/>
         </div>
         </div>
